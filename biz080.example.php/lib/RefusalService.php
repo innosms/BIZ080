@@ -48,7 +48,7 @@ class RefusalService
 		);
 		@curl_setopt_array($http, $options);
 		$responseJson = curl_exec($http);
-//var_dump($responseJson);
+
 		$http_status = curl_getinfo($http, CURLINFO_HTTP_CODE);
 		curl_close($http);
 
